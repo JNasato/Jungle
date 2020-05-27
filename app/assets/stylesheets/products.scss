@@ -50,6 +50,25 @@ main section.categories-show {
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
       }
+      
+      aside.low_quantity, aside.sold_out {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 7px;
+        color: white;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 12px;
+        font-size: 1em;
+      }
+      
+      aside.low_quantity {
+        background-color: #f0ad4e;
+      }
+      
+      aside.sold_out {
+        background-color: #d9534f;
+      }
 
       &:hover {
 
