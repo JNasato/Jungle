@@ -52,8 +52,8 @@
 
   <% else %>
     <div style="font-size: 2rem">
-      <p style="margin: 40px 0 30px; color: grey">Your cart is empty! Choose some items from the products page to checkout.</p>
-      <strong><%= link_to 'Go back to home', :root %></strong>
+      <p style="margin: 40px 0; color: grey">Your cart is empty! Choose some items from the products page to checkout.</p>
+      <%= link_to "Go back to home", root_path, class: 'btn btn-lg btn-primary' %>
     </div>
   
   <% end %>
