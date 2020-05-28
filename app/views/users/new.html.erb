@@ -1,11 +1,35 @@
-<h1>Signup!</h1>
+<h1>Signup for Jungle</h1>
 
-<%= form_for :user, url: '/users' do |f| %>
+<section style="width: 50%; padding: 50px; border: 3px double grey; border-radius: 10px; background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png')">
+  <%= form_for :user, url: '/users', :html => {:class => "form-horizontal center"} do |f| %>
+    <div class="form-group">
+      <%= f.label :name, "Name:", class: "col-md-4 text-left" %>
+      <div class="col-md-8">
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+    <div class="form-group">
+      <%= f.label :email, "E-mail:", class: "col-md-4 text-left" %>
+      <div class="col-md-8">
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+    </div>
 
-<% end %>
+    <div class="form-group">
+      <%= f.label :password, "Password:", class: "col-md-4 text-left" %>
+      <div class="col-md-8">
+        <%= f.password_field :password, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :password_confirmation, "Confirm Password:", class: "col-md-4 text-left" %>
+      <div class="col-md-8">
+        <%= f.password_field :password_confirmation, class: "form-control" %>
+      </div>
+    </div>
+
+    <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
+  <% end %>
+</section>
