@@ -1,5 +1,7 @@
 class CartsController < ApplicationController
 
+  # Add "before_filter :authorize" to any controller to secure it from non-logged in users
+
   def show
   end
 
