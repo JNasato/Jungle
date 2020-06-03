@@ -26,9 +26,6 @@ RSpec.feature "Visitor adds product to cart", type: :feature, js: true do
     expect(cart).to have_text 'My Cart (0)'
     
     within('article.product', match: :first) { click_button 'Add' }
-
-    #DEBUG
-    puts page.html
     
     #VERIFY
     expect(cart).to have_text 'My Cart (1)'

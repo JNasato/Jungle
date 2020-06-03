@@ -25,9 +25,6 @@ RSpec.feature "A user attempts to log in", type: :feature, js: true do
       find('input[value="Submit"]').click
     end
 
-    #DEBUG
-    puts page.html
-
     #VERIFY
     expect(page).to have_text 'Signed in as Nick Kroll'
   end
