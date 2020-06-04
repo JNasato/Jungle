@@ -14,6 +14,10 @@
     <%= button_to remove_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-danger' do %> - <% end %>
     <%= quantity %>
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-success' do %> + <% end %>
+    <br>
+    <% if flash[:notice] %>
+      <p style="font-weight: bold; font-size: 16px; color: red"><%= flash[:notice] %></p>
+    <% end %>
   </td>
   <td>
     <%= humanized_money_with_symbol product.price * quantity %>
