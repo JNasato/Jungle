@@ -2,6 +2,12 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Screenshots
+
+!["Screenshot of products list"](https://raw.githubusercontent.com/JNasato/Jungle/master/docs/jungle_products_list.png)
+!["Screenshot of cart with products to purchase"](https://raw.githubusercontent.com/JNasato/Jungle/master/docs/jungle_cart.png)
+!["Screenshot of order details after order has been processed"](https://raw.githubusercontent.com/JNasato/Jungle/master/docs/jungle_order_details.png)
+!["Screenshot of the products list from the admin's perspective"](https://raw.githubusercontent.com/JNasato/Jungle/master/docs/jungle_admin_all_products.png)
 
 ## Setup
 
